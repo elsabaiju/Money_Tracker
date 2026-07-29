@@ -1,0 +1,23 @@
+# Visual Studio
+.vs/
+**/.vs/
+
+bin/
+**/bin/
+
+obj/
+**/obj/
+
+# Flutter
+.dart_tool/
+build/
+
+# Android
+android/.gradle/
+
+# iOS
+ios/Pods/
+
+# User files
+*.user
+*.suo

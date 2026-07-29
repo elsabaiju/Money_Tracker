@@ -1,0 +1,54 @@
+create database tracker;
+
+CREATE TABLE users (
+    userid INT IDENTITY(1,1) PRIMARY KEY,
+    username NVARCHAR(100) NOT NULL,
+    email NVARCHAR(100) NOT NULL UNIQUE,
+    password NVARCHAR(300) NOT NULL
+);
+
+select * from users;
+
+CREATE TABLE expenses (
+    expenseid INT IDENTITY(1,1) PRIMARY KEY,
+    userid INT NOT NULL, 
+    date DATE NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    description VARCHAR(300)
+);
+
+select * from expenses;
+
+CREATE TABLE debts (
+    debtid INT IDENTITY(1,1) PRIMARY KEY,
+    userid INT NOT NULL,  
+    date DATE NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    deadline DATE NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    description VARCHAR(300)
+);
+
+select * from debts;
+
+CREATE TABLE notes (
+    notesid INT IDENTITY(1,1) PRIMARY KEY,
+    userid INT NOT NULL,  
+    date DATE NOT NULL,
+    notes VARCHAR(MAX) NOT NULL
+);
+
+select * from notes;
+
+CREATE TABLE limits (
+    limitid INT IDENTITY(1,1) PRIMARY KEY,
+    userid INT NOT NULL,
+    date DATE NOT NULL,
+    limitamount DECIMAL(10, 2) NOT NULL,
+    CONSTRAINT FK_limits_users FOREIGN KEY (userid) REFERENCES users(userid),
+    CONSTRAINT UQ_limits_user_date UNIQUE(userid, date)
+);
+
+select * from limits;
