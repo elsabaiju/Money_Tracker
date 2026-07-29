@@ -1,4 +1,4 @@
-# 💰 Money Tracker
+#  Money Tracker
 
 A full-stack personal finance management application developed using **Flutter**, **ASP.NET Core Web API**, **Dapper ORM**, and **Microsoft SQL Server**. The application enables users to efficiently manage expenses, debts, monthly budgets, and personal notes through a clean and intuitive interface.
 
