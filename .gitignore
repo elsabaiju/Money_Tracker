@@ -21,3 +21,10 @@ ios/Pods/
 # User files
 *.user
 *.suo
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
