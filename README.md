@@ -35,7 +35,6 @@ A full-stack personal finance management application developed using **Flutter**
 - Visual Studio
 - Visual Studio Code
 - Git & GitHub
-- Postman
 
 ---
 
@@ -111,32 +110,6 @@ appsettings.json
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots here.
-
-### Login
-
-<img src="assets/screenshots/login.png" width="250"/>
-
-### Dashboard
-
-<img src="assets/screenshots/dashboard.png" width="250"/>
-
-### Expenses
-
-<img src="assets/screenshots/expenses.png" width="250"/>
-
-### Notes
-
-<img src="assets/screenshots/notes.png" width="250"/>
-
-### Debts
-
-<img src="assets/screenshots/debts.png" width="250"/>
-
----
-
 ## 🔑 API Modules
 
 - User Authentication
@@ -154,19 +127,5 @@ appsettings.json
 - Notifications
 - Cloud Database Integration
 - AI-powered Expense Insights
-
----
-
-## 👩‍💻 Developed By
-
-**Elsa Baiju**
-
-B.Tech Computer Science (Honours in AI & ML)
-
-CHRIST (Deemed to be University)
-
-GitHub: https://github.com/elsabaiju
-
-LinkedIn: *(Add your LinkedIn profile here)*
 
 ---
